@@ -274,7 +274,7 @@ a { color: inherit; }
   align-items: center;
   gap: 16px;
   width: min(1180px, calc(100% - 48px));
-  margin: 0 auto 48px;
+  margin: 32px auto 48px;
   background: linear-gradient(120deg, var(--green-1), var(--green-2));
   color: #fff;
   border-radius: 20px;
@@ -544,7 +544,7 @@ a { color: inherit; }
   .features { padding: 4px 16px 32px; }
   .features-inner { grid-template-columns: 1fr; gap: 14px; }
 
-  .whatsapp-banner { width: calc(100% - 32px); padding: 16px 18px; border-radius: 16px; margin-bottom: 32px; }
+  .whatsapp-banner { width: calc(100% - 32px); padding: 16px 18px; border-radius: 16px; margin: 20px auto 32px; }
   .wa-text strong { font-size: 14.5px; }
   .wa-text small { font-size: 12px; }
 
