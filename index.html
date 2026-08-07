@@ -1,97 +1,314 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="light">
+<html lang="kk" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nurly Keleshek — Printing</title>
+<title>Nurly Keleshek — Баспахана · Блокноттар · Даму</title>
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="frame">
-  <span class="wm wm-p" aria-hidden="true">P</span>
-  <span class="wm wm-w" aria-hidden="true">W</span>
+<a class="skip-link" href="#main">Мазмұнға өту</a>
 
-  <div class="inner">
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="Nurly Keleshek" width="1100" height="452">
+    </a>
 
-    <div class="topbar">
-      <span class="eyebrow">NK &bull; Print</span>
-      <button class="theme-toggle" id="themeToggle" type="button">Dark</button>
-    </div>
-
-    <div class="header-content">
-      <div class="brand-logo-wrap">
-        <img class="brand-logo" src="assets/logo.png" alt="Nurly Keleshek — Баспахана · Блокноттар · Даму" width="1100" height="452">
-      </div>
-      <p class="sub">Сапалы баспа — жарқын нәтиже. Печатаем всё: от визитки до баннера.</p>
-    </div>
-
-    <nav class="grid" aria-label="Наши соцсети">
-
-      <!-- WhatsApp -->
-      <a class="card" href="https://wa.me/77773255722" target="_blank" rel="noopener">
-        <span class="icon" style="background:#25d366" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.7 4.3 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.4-.3z"/></svg>
-        </span>
-        <div class="card-title">WhatsApp</div>
-        <div class="card-desc">Тапсырыс беру &middot; Заказать</div>
-      </a>
-
-      <!-- Instagram -->
-      <a class="card" href="https://www.instagram.com/nurly_keleshek" target="_blank" rel="noopener">
-        <span class="icon" style="background:linear-gradient(45deg,#f9483f,#e5187d,#c32aa3)" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg>
-        </span>
-        <div class="card-title">Instagram</div>
-        <div class="card-desc">Жұмыстарымыз &middot; Наши работы</div>
-      </a>
-
-      <!-- TikTok -->
-      <a class="card" href="https://www.tiktok.com/@nurly_keleshek" target="_blank" rel="noopener">
-        <span class="icon" style="background:#111114" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.7 3c.4 1.9 1.6 3.3 3.6 3.6v3c-1.4 0-2.6-.4-3.7-1.2v6.3a5.9 5.9 0 1 1-5.9-5.9c.3 0 .7 0 1 .1v3.1a2.9 2.9 0 1 0 2 2.7V3h3z"/></svg>
-        </span>
-        <div class="card-title">TikTok</div>
-        <div class="card-desc">Өндіріс видеолары &middot; Видео</div>
-      </a>
-
-      <!-- Telegram -->
-      <a class="card" href="https://t.me/+77773255722" target="_blank" rel="noopener">
-        <span class="icon" style="background:#29a9eb" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.7 4.2 3.4 10.9c-.9.4-.9 1.3 0 1.6l4.3 1.4 1.6 5.1c.2.7.9.9 1.5.3l2.3-2.2 4.5 3.3c.6.4 1.3.1 1.5-.7l2.8-13.9c.2-.9-.5-1.5-1.2-1.6zM8.4 13.6l8.8-6.3-7 7-.3 2.8-1.5-3.5z"/></svg>
-        </span>
-        <div class="card-title">Telegram</div>
-        <div class="card-desc">Арна &middot; Новости и акции</div>
-      </a>
-
-      <!-- 2GIS -->
-      <a class="card" href="https://2gis.kz/shymkent/geo/22659371324249154/69.759334,42.308864" target="_blank" rel="noopener">
-        <span class="icon" style="background:#34b93d;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px" aria-hidden="true">2G</span>
-        <div class="card-title">2GIS</div>
-        <div class="card-desc">Мекенжай &middot; Как нас найти</div>
-      </a>
-
-      <!-- YouTube -->
-      <a class="card" href="https://www.youtube.com/@NurlyKeleshek" target="_blank" rel="noopener">
-        <span class="icon" style="background:#f24e40" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26.6 26.6 0 0 0 2 12c0 1.6.1 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.3-1.6.4-3.2.4-4.8 0-1.6-.1-3.2-.4-4.8zM10 15.2V8.8l5.2 3.2-5.2 3.2z"/></svg>
-        </span>
-        <div class="card-title">YouTube</div>
-        <div class="card-desc">Шолулар &middot; Обзоры печати</div>
-      </a>
-
+    <nav class="nav-links" aria-label="Бөлімдер">
+      <a href="#products">Өнімдер</a>
+      <a href="#reviews">Пікірлер</a>
+      <a href="#contacts">Байланыс</a>
     </nav>
 
-    <footer>Nurly Keleshek Printing</footer>
-
+    <div class="header-actions">
+      <a class="btn-contact" href="https://wa.me/77773255722" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2.2c.5 0 .9.3 1 .8l1 3.6c.1.4 0 .8-.3 1.1L8 11c1 2.2 2.8 4 5 5l1.5-1.4c.3-.3.7-.4 1.1-.3l3.6 1c.5.1.8.5.8 1v2.2c0 .8-.7 1.5-1.5 1.5C10.5 20 4 13.5 4 5.5Z"/></svg>
+        <span>Байланысу</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Мәзірді ашу" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
-</div>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Мобильді мәзір">
+    <a href="#products">Өнімдер</a>
+    <a href="#reviews">Пікірлер</a>
+    <a href="#contacts">Байланыс</a>
+    <a class="mobile-menu-wa" href="https://wa.me/77773255722" target="_blank" rel="noopener">WhatsApp-қа жазу</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker">Сапалы баспа — жарқын нәтиже!</p>
+        <h1 class="hero-title">Өзгеріс сенен<br>басталады</h1>
+        <p class="hero-desc">Бизнес &middot; Мотивациялық блокноттар &middot; Кітаптар &middot; Сапалы баспа өнімдері</p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="https://wa.me/77773255722" target="_blank" rel="noopener">Тапсырыс беру</a>
+          <a class="btn-ghost" href="#products">Өнімдерді көру</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <span class="hero-visual-glow" aria-hidden="true"></span>
+        <img src="assets/hero-notebook.png" alt="Nurly Keleshek мотивациялық блокноты" width="860" height="754">
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features-inner">
+      <article class="feature-card feature-card--dark">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M8 2v4M12 2v4M16 2v4"/><path d="M8 10h8M8 14h8M8 18h5"/></svg>
+        </span>
+        <h3>Бизнес-мотивациялық блокноттар</h3>
+        <p>Идеялардан нәтижеге</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5z"/></svg>
+        </span>
+        <h3>Кітаптар</h3>
+        <p>Білім — ең үлкен инвестиция</p>
+      </article>
+
+      <article class="feature-card">
+        <span class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="15" rx="1.5"/><rect x="8" y="3" width="13" height="15" rx="1.5" fill="var(--card-bg)"/></svg>
+        </span>
+        <h3>Журналдар</h3>
+        <p>Сапалы журналдар баспасы</p>
+      </article>
+    </div>
+  </section>
+
+  <a class="whatsapp-banner" href="https://wa.me/77773255722" target="_blank" rel="noopener">
+    <span class="wa-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5c.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.7 4.3 3.8.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2l-.4-.3z"/></svg>
+    </span>
+    <span class="wa-text">
+      <strong>WhatsApp — тапсырыс беру</strong>
+      <small>Жауап 5 минут ішінде!</small>
+    </span>
+    <span class="wa-arrow" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m9 6 6 6-6 6"/></svg>
+    </span>
+  </a>
+
+  <section class="social-grid" id="contacts" aria-label="Байланыс арналары">
+
+    <a class="card" href="https://www.instagram.com/nurly_keleshek" target="_blank" rel="noopener">
+      <span class="icon" style="background:linear-gradient(45deg,#f9483f,#e5187d,#c32aa3)" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <div class="card-title">Instagram</div>
+      <div class="card-desc">Жұмыстарымыз және пікірлер</div>
+      <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://www.tiktok.com/@nurly_keleshek" target="_blank" rel="noopener">
+      <span class="icon" style="background:#111114" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.7 3c.4 1.9 1.6 3.3 3.6 3.6v3c-1.4 0-2.6-.4-3.7-1.2v6.3a5.9 5.9 0 1 1-5.9-5.9c.3 0 .7 0 1 .1v3.1a2.9 2.9 0 1 0 2 2.7V3h3z"/></svg>
+      </span>
+      <div class="card-title">TikTok</div>
+      <div class="card-desc">Блокнот жасау процесі және видео</div>
+      <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://t.me/+77773255722" target="_blank" rel="noopener">
+      <span class="icon" style="background:#29a9eb" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.7 4.2 3.4 10.9c-.9.4-.9 1.3 0 1.6l4.3 1.4 1.6 5.1c.2.7.9.9 1.5.3l2.3-2.2 4.5 3.3c.6.4 1.3.1 1.5-.7l2.8-13.9c.2-.9-.5-1.5-1.2-1.6zM8.4 13.6l8.8-6.3-7 7-.3 2.8-1.5-3.5z"/></svg>
+      </span>
+      <div class="card-title">Telegram</div>
+      <div class="card-desc">Жаңалықтар және пайдалы кеңестер</div>
+      <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://www.youtube.com/@NurlyKeleshek" target="_blank" rel="noopener">
+      <span class="icon" style="background:#f24e40" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26.6 26.6 0 0 0 2 12c0 1.6.1 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.3-1.6.4-3.2.4-4.8 0-1.6-.1-3.2-.4-4.8zM10 15.2V8.8l5.2 3.2-5.2 3.2z"/></svg>
+      </span>
+      <div class="card-title">YouTube</div>
+      <div class="card-desc">Полиграфия сабақтары және блокнот өндірісі</div>
+      <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://2gis.kz/shymkent/geo/22659371324249154/69.759334,42.308864" target="_blank" rel="noopener">
+      <span class="icon" style="background:#34b93d;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px" aria-hidden="true">2G</span>
+      <div class="card-title">2GIS</div>
+      <div class="card-desc">Бізді картадан табыңыз</div>
+      <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+
+    <a class="card" href="https://l.kaspi.kz/shop/HVywnP93VAjHd5t?sessionId=3868ff58-b84f-4b69-a1b0-6642bfd2a4c31785991772" target="_blank" rel="noopener">
+      <span class="icon" style="background:#e2231a;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px" aria-hidden="true">K</span>
+      <div class="card-title">Kaspi дүкені</div>
+      <div class="card-desc">Блокноттар, кітаптар және басқа өнімдер</div>
+      <span class="card-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 6 6 6-6 6"/></svg></span>
+    </a>
+
+  </section>
+
+  <section class="trust-badges">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="5"/><path d="M9 12.5 7 21l5-3 5 3-2-8.5"/></svg></span>
+        <div>
+          <strong>Сапа кепілдігі</strong>
+          <small>Ең жоғары сапа 100% кепілдік</small>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="7" width="12" height="9" rx="1"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="6.5" cy="18" r="1.6"/><circle cx="16.5" cy="18" r="1.6"/></svg></span>
+        <div>
+          <strong>Қазақстан бойынша</strong>
+          <small>Тез және сенімді жеткізу</small>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="7" cy="7" r="2.3"/><circle cx="17" cy="17" r="2.3"/><path d="M18 6 6 18"/></svg></span>
+        <div>
+          <strong>Жеңілдіктер</strong>
+          <small>Тұрақты акциялар мен жеңілдіктер</small>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <div>
+          <strong>Сенім мен ықылас</strong>
+          <small>Әр тапсырысқа жауапкершілікпен</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="products-head">
+      <h2>Біздің өнімдеріміз</h2>
+      <a href="https://www.instagram.com/nurly_keleshek" target="_blank" rel="noopener">Барлығын көру
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="products-row" id="productsRow">
+      <div class="product-tile" style="--tile-a:#1c3a5e;--tile-b:#0e2338">
+        <svg viewBox="0 0 100 100">
+          <rect x="18" y="30" width="46" height="60" rx="8" transform="rotate(-14 41 60)" fill="#fff" opacity=".35"/>
+          <rect x="28" y="26" width="46" height="60" rx="8" transform="rotate(-4 51 56)" fill="#fff" opacity=".6"/>
+          <rect x="34" y="20" width="48" height="62" rx="8" fill="#fff"/>
+          <g stroke="#e4c073" stroke-width="2.4" fill="none">
+            <circle cx="34" cy="30" r="2.2"/><circle cx="34" cy="40" r="2.2"/><circle cx="34" cy="50" r="2.2"/><circle cx="34" cy="60" r="2.2"/><circle cx="34" cy="70" r="2.2"/>
+          </g>
+          <rect x="46" y="46" width="26" height="3" rx="1.5" fill="var(--tile-a)"/>
+          <rect x="46" y="54" width="18" height="3" rx="1.5" fill="var(--tile-a)" opacity=".6"/>
+        </svg>
+        <span>Блокноттар</span>
+      </div>
+      <div class="product-tile" style="--tile-a:#2f8f6e;--tile-b:#175943">
+        <svg viewBox="0 0 100 100">
+          <rect x="16" y="62" width="68" height="14" rx="4" fill="#fff" opacity=".5" transform="rotate(-3 50 69)"/>
+          <rect x="18" y="46" width="64" height="14" rx="4" fill="#fff" opacity=".78" transform="rotate(2 50 53)"/>
+          <rect x="20" y="30" width="60" height="14" rx="4" fill="#fff"/>
+          <rect x="20" y="30" width="60" height="5" rx="2.5" fill="#e4c073"/>
+          <rect x="66" y="20" width="6" height="18" fill="#e4c073"/>
+        </svg>
+        <span>Кітаптар</span>
+      </div>
+      <div class="product-tile" style="--tile-a:#caa04a;--tile-b:#8f6d26">
+        <svg viewBox="0 0 100 100">
+          <rect x="24" y="18" width="46" height="62" rx="4" fill="#fff" opacity=".4" transform="rotate(12 47 49)"/>
+          <rect x="24" y="18" width="46" height="62" rx="4" fill="#fff" opacity=".7" transform="rotate(-6 47 49)"/>
+          <rect x="26" y="18" width="48" height="62" rx="4" fill="#fff"/>
+          <rect x="34" y="30" width="32" height="20" rx="2" fill="var(--tile-a)" opacity=".85"/>
+          <rect x="34" y="56" width="32" height="3" rx="1.5" fill="var(--tile-a)" opacity=".55"/>
+          <rect x="34" y="63" width="22" height="3" rx="1.5" fill="var(--tile-a)" opacity=".4"/>
+        </svg>
+        <span>Журналдар</span>
+      </div>
+      <div class="product-tile" style="--tile-a:#3d6fa8;--tile-b:#1c3a5e">
+        <svg viewBox="0 0 100 100">
+          <rect x="18" y="46" width="60" height="36" rx="6" fill="#fff" opacity=".55" transform="rotate(-10 48 64)"/>
+          <rect x="24" y="32" width="60" height="36" rx="6" fill="#fff"/>
+          <circle cx="38" cy="50" r="7" fill="var(--tile-a)" opacity=".8"/>
+          <rect x="50" y="44" width="26" height="3.4" rx="1.7" fill="var(--tile-a)" opacity=".85"/>
+          <rect x="50" y="52" width="18" height="3.4" rx="1.7" fill="var(--tile-a)" opacity=".5"/>
+        </svg>
+        <span>Визиткалар</span>
+      </div>
+      <div class="product-tile" style="--tile-a:#c9662f;--tile-b:#8a3f1a">
+        <svg viewBox="0 0 100 100">
+          <rect x="34" y="14" width="32" height="58" rx="4" fill="#fff"/>
+          <ellipse cx="50" cy="72" rx="16" ry="6" fill="#fff" opacity=".7"/>
+          <rect x="41" y="26" width="18" height="12" rx="2" fill="var(--tile-a)" opacity=".85"/>
+          <rect x="41" y="42" width="18" height="3" rx="1.5" fill="var(--tile-a)" opacity=".5"/>
+          <rect x="41" y="48" width="12" height="3" rx="1.5" fill="var(--tile-a)" opacity=".35"/>
+        </svg>
+        <span>Баннерлер</span>
+      </div>
+    </div>
+
+    <div class="products-dots" id="productsDots" aria-hidden="true"></div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <h2 class="reviews-title">Біздің тапсырыс берушілер</h2>
+    <div class="review-card">
+      <div class="stars" aria-label="5 жұлдыз">★★★★★</div>
+      <p>«Өнім сапасы өте жақсы! Уақытында жасап, жеткізді. Рақмет сіздерге!»</p>
+      <div class="review-author">
+        <span class="avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        </span>
+        <span>Айгерім, Алматы</span>
+      </div>
+    </div>
+
+    <div class="cta-card">
+      <div>
+        <h3>Идеяңыз бар ма?</h3>
+        <p>Біз оны сапалы өнімге айналдырамыз!</p>
+      </div>
+      <a class="btn-primary" href="https://wa.me/77773255722" target="_blank" rel="noopener">Тапсырыс беру</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="footer-contacts">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5.5C4 4.7 4.7 4 5.5 4h2.2c.5 0 .9.3 1 .8l1 3.6c.1.4 0 .8-.3 1.1L8 11c1 2.2 2.8 4 5 5l1.5-1.4c.3-.3.7-.4 1.1-.3l3.6 1c.5.1.8.5.8 1v2.2c0 .8-.7 1.5-1.5 1.5C10.5 20 4 13.5 4 5.5Z"/></svg>
+      <a href="tel:+77773255722">+7 777 325 57 22</a>
+    </div>
+    <div class="footer-col">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      <span>Дүйсенбі – Сенбі, 09:00 – 18:00</span>
+    </div>
+    <div class="footer-col">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+      <a href="https://2gis.kz/shymkent/geo/22659371324249154/69.759334,42.308864" target="_blank" rel="noopener">Қазақстан, Шымкент қ. — нақты мекенжай 2GIS-та</a>
+    </div>
+    <div class="footer-col">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6 8 7 8-7"/></svg>
+      <a href="mailto:info@nurly-keleshek.kz">info@nurly-keleshek.kz</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© Nurly Keleshek Printing</div>
+</footer>
 
 <script src="script.js"></script>
 </body>
